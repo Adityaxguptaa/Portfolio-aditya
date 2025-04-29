@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Gupta | Portfolio</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn" aria-label="Toggle dark/light theme">
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+    </button>
+  </div>
+  
+  <header class="header">
+    <div class="container">
+      <div class="logo-container">
+        <div class="logo">
+          <div class="logo-text">AG</div>
+        </div>
+        <div class="logo-full">Aditya Gupta</div>
+      </div>
+      <nav class="nav">
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="reveal">Hi, I'm <span class="highlight">Aditya Gupta</span></h1>
+          <h2 class="typed-text reveal-delay" data-text="Frontend Developer, Backend Developer, Machine Learning Engineer"></h2>
+          <p class="reveal-delay-2">Crafting digital experiences with code and creativity.</p>
+          <div class="hero-cta reveal-delay-3">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+          <div class="social-links reveal-delay-4">
+            <a href="https://github.com/Adityaxguptaa" aria-label="GitHub" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/aditya-gupta-508720280" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://leetcode.com/u/Adityaxguptaa/" aria-label="Leetcode" class="social-icon"><i class="fa-solid fa-laptop"></i></a>
+            <a href="https://mail.google.com/mail/u/0/" aria-label="Email" class="social-icon"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="hero-image reveal">
+          <div class="profile-image">
+            <img src="myimg1.jpg" alt="Aditya Gupta" loading="lazy">
+          </div>
+          <div class="blob"></div>
+          <div class="circle-pattern"></div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <div class="arrow">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title reveal">About Me</h2>
+        <div class="about-content">
+          <div class="about-image reveal">
+            <div class="img-container">
+              <img src="myimg2.jpeg" alt="Aditya Gupta" loading="lazy">
+            </div>
+          </div>
+          <div class="about-text">
+            <p class="reveal-delay">I'm a passionate software developer and machine learning engineer with expertise in building web applications and implementing AI solutions. With a strong foundation in both frontend and backend technologies, I strive to create seamless user experiences powered by efficient code.</p>
+            <p class="reveal-delay-2">My journey in tech has been driven by curiosity and a desire to solve complex problems. I enjoy working at the intersection of beautiful design and powerful functionality, creating digital products that make a difference.</p>
+            <div class="about-info reveal-delay-3">
+              <div class="info-item">
+                <h3>Education</h3>
+                <p>B.Tech in Computer Science</p>
+              </div>
+              <div class="info-item">
+                <h3>Location</h3>
+                <p>India</p>
+              </div>
+              <div class="info-item">
+                <h3>Interest</h3>
+                <p>AI, Web Dev, Problem Solving</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title reveal">Skills</h2>
+        <div class="skills-container">
+          <div class="skills-category reveal">
+            <h3>Programming Languages</h3>
+            <div class="skills-grid">
+              <div class="skill-item" data-skill="Python">
+                <div class="skill-icon"><i class="fab fa-python"></i></div>
+                <h4>Python</h4>
+                <div class="skill-bar"><div class="skill-level" data-level="90"></div></div>
+              </div>
+              <div class="skill-item" data-skill="C++">
+                <div class="skill-icon"><i class="fas fa-code"></i></div>
+                <h4>C++</h4>
+                <div class="skill-bar"><div class="skill-level" data-level="85"></div></div>
+              </div>
+              <div class="skill-item" data-skill="Java">
+                <div class="skill-icon"><i class="fab fa-java"></i></div>
+                <h4>Java</h4>
+                <div class="skill-bar"><div class="skill-level" data-level="80"></div></div>
+              </div>
+              <div class="skill-item" data-skill="JavaScript">
+                <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                <h4>JavaScript</h4>
+                <div class="skill-bar"><div class="skill-level" data-level="90"></div></div>
+              </div>
+              <div class="skill-item" data-skill="TypeScript">
+                <div class="skill-icon"><i class="fab fa-js"></i></div>
+                <h4>TypeScript</h4>
+                <div class="skill-bar"><div class="skill-level" data-level="85"></div></div>
+              </div>
+              <div class="skill-item" data-skill="SQL">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <h4>SQL</h4>
+                <div class="skill-bar"><div class="skill-level" data-level="80"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-category reveal-delay">
+            <h3>Frontend Development</h3>
+            <div class="skills-grid">
+              <div class="skill-item" data-skill="HTML5">
+                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                <h4>HTML5</h4>
+                <div class="skill-bar"><div class="skill-level" data-level="95"></div></div>
+              </div>
+              <div class="skill-item" data-skill="CSS3">
+                <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                <h4>CSS3</h4>
+                <div class="skill-bar"><div class="skill-level" data-level="90"></div></div>
+              </div>
+              <div class="skill-item" data-skill="React.js">
+                <div class="skill-icon"><i class="fab fa-react"></i></div>
+                <h4>React.js</h4>
+                <div class="skill-bar"><div class="skill-level" data-level="90"></div></div>
+              </div>
+              <div class="skill-item" data-skill="Next.js">
+                <div class="skill-icon"><i class="fab fa-react"></i></div>
+                <h4>Next.js</h4>
+                <div class="skill-bar"><div class="skill-level" data-level="85"></div></div>
+              </div>
+              <div class="skill-item" data-skill="Tailwind CSS">
+                <div class="skill-icon"><i class="fab fa-css3"></i></div>
+                <h4>Tailwind CSS</h4>
+                <div class="skill-bar"><div class="skill-level" data-level="90"></div></div>
+              </div>
+              <div class="skill-item" data-skill="Bootstrap">
+                <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+                <h4>Bootstrap</h4>
+                <div class="skill-bar"><div class="skill-level" data-level="85"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-category reveal-delay-2">
+            <h3>Backend Development</h3>
+            <div class="skills-grid">
+              <div class="skill-item" data-skill="Node.js">
+                <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                <h4>Node.js</h4>
+                <div class="skill-bar"><div class="skill-level" data-level="85"></div></div>
+              </div>
+              <div class="skill-item" data-skill="Express.js">
+                <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                <h4>Express.js</h4>
+                <div class="skill-bar"><div class="skill-level" data-level="80"></div></div>
+              </div>
+              <div class="skill-item" data-skill="REST APIs">
+                <div class="skill-icon"><i class="fas fa-server"></i></div>
+                <h4>REST APIs</h4>
+                <div class="skill-bar"><div class="skill-level" data-level="85"></div></div>
+              </div>
+              <div class="skill-item" data-skill="MongoDB">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <h4>MongoDB</h4>
+                <div class="skill-bar"><div class="skill-level" data-level="80"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-category reveal-delay-3">
+            <h3>Machine Learning & AI</h3>
+            <div class="skills-grid">
+              <div class="skill-item" data-skill="TensorFlow">
+                <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                <h4>TensorFlow</h4>
+                <div class="skill-bar"><div class="skill-level" data-level="85"></div></div>
+              </div>
+              <div class="skill-item" data-skill="PyTorch">
+                <div class="skill-icon"><i class="fas fa-fire"></i></div>
+                <h4>PyTorch</h4>
+                <div class="skill-bar"><div class="skill-level" data-level="80"></div></div>
+              </div>
+              <div class="skill-item" data-skill="NLP">
+                <div class="skill-icon"><i class="fas fa-comment-alt"></i></div>
+                <h4>NLP</h4>
+                <div class="skill-bar"><div class="skill-level" data-level="75"></div></div>
+              </div>
+              <div class="skill-item" data-skill="Generative AI">
+                <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                <h4>Generative AI</h4>
+                <div class="skill-bar"><div class="skill-level" data-level="80"></div></div>
+              </div>
+              <div class="skill-item" data-skill="Data Science">
+                <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+                <h4>Data Science</h4>
+                <div class="skill-bar"><div class="skill-level" data-level="85"></div></div>
+              </div>
+              <div class="skill-item" data-skill="Prompt Engineering">
+                <div class="skill-icon"><i class="fas fa-magic"></i></div>
+                <h4>Prompt Engineering</h4>
+                <div class="skill-bar"><div class="skill-level" data-level="90"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title reveal">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card reveal">
+            <div class="project-content">
+              <div class="project-tags">
+                <span>Python</span>
+                <span>NLP</span>
+                <span>Machine Learning</span>
+              </div>
+              <h3 class="project-title">Twitter Sentiment Analysis</h3>
+              <p class="project-description">Advanced machine learning model using Random Forest Algorithm to classify tweets into positive, negative, and neutral sentiments with high accuracy.</p>
+              <ul class="project-highlights">
+                <li>Implemented NLP techniques for data preprocessing</li>
+                <li>Used tokenization and stopword removal</li>
+                <li>Achieved high accuracy and F1-scores</li>
+                <li>Validated with real-world Twitter datasets</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> View Code</a>
+                <a href="#" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              </div>
+            </div>
+            <div class="project-image">
+              <img src="tsa.png" alt="Twitter Sentiment Analysis" loading="lazy">
+            </div>
+          </div>
+
+          <div class="project-card reveal-delay">
+            <div class="project-image">
+              <img src="sensai.png" alt="SensAI - AI-Powered Career Assistant" loading="lazy">
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span>Web Development</span>
+                <span>AI</span>
+                <span>Full Stack</span>
+              </div>
+              <h3 class="project-title">SensAI - AI-Powered Career Assistant</h3>
+              <p class="project-description">Full-stack web application assisting users with resume building, interview preparation, and industry insights powered by AI.</p>
+              <ul class="project-highlights">
+                <li>Implemented AI-powered Resume Builder with PDF export</li>
+                <li>Integrated Interview Prep with AI-generated questions</li>
+                <li>Used Inngest for background job automation</li>
+                <li>Secured authentication with Clerk</li>
+                <li>Utilized Neon (PostgreSQL) for efficient data storage</li>
+                <li>Deployed on Vercel with Next.js</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/Adityaxguptaa/SensAi" class="btn btn-outline"><i class="fab fa-github"></i> View Code</a>
+                <a href="https://sens-ai-royu.vercel.app/" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="achievements">
+      <div class="container">
+        <h2 class="section-title reveal">Achievements</h2>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-content">
+              <div class="timeline-date">2024</div>
+              <div class="timeline-marker"></div>
+              <h3>5 Star in Problem Solving on HackerRank</h3>
+              <p>Showcasing strong analytical and coding skills through consistent high performance.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal-delay">
+            <div class="timeline-content">
+              <div class="timeline-date">2023</div>
+              <div class="timeline-marker"></div>
+              <h3>300+ DSA Problems Solved</h3>
+              <p>Solved numerous Data Structures and Algorithms problems across platforms like LeetCode and HackerRank.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal-delay-2">
+            <div class="timeline-content">
+              <div class="timeline-date">2023</div>
+              <div class="timeline-marker"></div>
+              <h3>Flipkart Grid Round 1 Qualifier</h3>
+              <p>Successfully cleared Round 1 of Flipkart Grid, demonstrating technical proficiency and innovative problem-solving skills.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal-delay-3">
+            <div class="timeline-content">
+              <div class="timeline-date">2024</div>
+              <div class="timeline-marker"></div>
+              <h3>Highest Fundraiser Award</h3>
+              <p>Recognized as the highest fundraiser for Tare Zameen Foundation, earning a Letter of Recommendation.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal-delay-4">
+            <div class="timeline-content">
+              <div class="timeline-date">2023</div>
+              <div class="timeline-marker"></div>
+              <h3>Data Science and Generative AI Certification</h3>
+              <p>Completed comprehensive course from PW Skills, enhancing expertise in machine learning and AI technologies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title reveal">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info reveal">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h3>Location</h3>
+                <p>Ghaziabad, India</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <h3>Email</h3>
+                <p>ag80860307@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h3>Phone</h3>
+                <p>+91 74510 90313</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#" aria-label="GitHub" class="social-icon"><i class="fab fa-github"></i></a>
+              <a href="#" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Twitter" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          <form class="contact-form reveal-delay" id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <div class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="logo">
+            <div class="logo-text">AG</div>
+          </div>
+          <p>Aditya Gupta</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/Adityaxguptaa" aria-label="GitHub" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/aditya-gupta-508720280" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin"></i></a>
+          <a href="https://leetcode.com/u/Adityaxguptaa/" aria-label="Leetcode" class="social-icon"><i class="fa-solid fa-laptop"></i></a>
+          <a href="https://mail.google.com/mail/u/0/" aria-label="Email" class="social-icon"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Aditya Gupta. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,326 @@
+/* Animations */
+
+/* Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease 0.2s, transform 0.8s ease 0.2s;
+}
+
+.reveal-delay.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-2 {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease 0.4s, transform 0.8s ease 0.4s;
+}
+
+.reveal-delay-2.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-3 {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease 0.6s, transform 0.8s ease 0.6s;
+}
+
+.reveal-delay-3.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-4 {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease 0.8s, transform 0.8s ease 0.8s;
+}
+
+.reveal-delay-4.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Typing Animation */
+.typed-text::after {
+  content: '|';
+  animation: blink 1s infinite;
+}
+
+/* Skill Bar Animation */
+.skill-level {
+  width: 0;
+  transition: width 1.5s ease-in-out;
+}
+
+/* Logo Hover Effect */
+.logo {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logo::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(45deg);
+  transition: all 0.6s ease;
+  opacity: 0;
+}
+
+.logo:hover::after {
+  opacity: 1;
+  transform: rotate(45deg) translateX(100%);
+}
+
+/* Navigation Animations */
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--secondary-color);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Mobile Navigation Animation */
+.nav-toggle {
+  position: relative;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.nav-toggle.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.nav-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Button Hover Effects */
+.btn {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.5s ease, height 0.5s ease;
+}
+
+.btn:hover::after {
+  width: 300%;
+  height: 300%;
+}
+
+/* Social Icon Animations */
+.social-icon {
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+}
+
+/* Project Card Hover Effects */
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px var(--shadow-color);
+}
+
+/* Timeline Marker Animation */
+.timeline-marker {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item:hover .timeline-marker {
+  transform: translateX(-50%) scale(1.2);
+  box-shadow: 0 0 0 8px rgba(62, 146, 204, 0.2);
+}
+
+/* Form Input Focus Animations */
+.form-group input,
+.form-group textarea {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 3px rgba(62, 146, 204, 0.1);
+}
+
+/* Custom Cursor Animations */
+.cursor {
+  transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+}
+
+.cursor.active {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+}
+
+.cursor-follower.active {
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary-color);
+  border-color: transparent;
+}
+
+/* Keyframe Animations */
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Blob Animation */
+.blob {
+  animation: blob-morph 8s ease-in-out infinite;
+}
+
+@keyframes blob-morph {
+  0% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  25% {
+    border-radius: 50% 50% 30% 70% / 60% 40% 60% 40%;
+  }
+  50% {
+    border-radius: 70% 30% 50% 50% / 40% 60% 40% 60%;
+  }
+  75% {
+    border-radius: 40% 60% 70% 30% / 70% 50% 50% 30%;
+  }
+  100% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+}
+
+/* Section Transition Animations */
+.section-transition {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-transition::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+  z-index: 1;
+}
+
+.section-transition.active::before {
+  transform: translateX(0);
+}
+
+.section-transition.complete::before {
+  transform: translateX(100%);
+}
